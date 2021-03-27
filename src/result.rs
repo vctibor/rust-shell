@@ -52,6 +52,7 @@ impl From<env::VarError> for ShellError {
     }
 }
 
+#[derive(Debug)]
 pub struct SuccessfulExit(PhantomData<SuccessfulExit>);
 
 impl Default for SuccessfulExit {
